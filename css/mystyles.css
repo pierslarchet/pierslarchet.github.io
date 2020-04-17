@@ -247,3 +247,20 @@ p{
     }
     
 }
+
+/*iPad*/
+@media (min-width: 768px) { 
+
+.nodesktop{
+    display: block;
+}
+
+.nomobile{
+    display: none;
+}
+
+.noipad{
+    display: none;   
+}
+
+}
