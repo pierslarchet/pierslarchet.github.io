@@ -66,6 +66,7 @@ text-wrap: balanced;
 
 .leftpush{
     margin-left: 40px;
+    z-index: 1;
 }
 
 .toppush{
@@ -76,6 +77,7 @@ text-wrap: balanced;
 /*    padding-left: 320px; */
     display: inline-flex;
 	align-content: flex-end;
+    z-index: 1;
 }
 
 .werk{
@@ -208,6 +210,10 @@ a:hover.details{
     animation: 0s shake infinite alternate;
 }
 
+.homevid{
+    margin-top: -120px;
+    z-index: 0;
+}
 
 
 /*MEDIA QUERY*/
