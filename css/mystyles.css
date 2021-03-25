@@ -211,9 +211,15 @@ a:hover.details{
 }
 
 .homevid{
-    margin-top: -120px;
+    margin-top: -50px;
     z-index: 0;
 }
+
+.nomobile{
+    display: block;
+}
+
+
 
 
 /*MEDIA QUERY*/
@@ -252,11 +258,17 @@ p{
        height: 90px; 
     }
     
+    .mobilevid{
+    width: 100%   !important;
+    height: auto   !important;
+}
+    
 }
 
 /*iPad*/
 @media (min-width: 768px) { 
 
+/*
 .nodesktop{
     display: block;
 }
@@ -268,5 +280,6 @@ p{
 .noipad{
     display: none;   
 }
+*/
 
 }
