@@ -1,12 +1,18 @@
 @font-face{
-font-family: 'cinetype';
-src: url(../fonts/cinetype/GT-Cinetype-Light.otf) format('opentype'); 
+font-family: 'thunder';
+src: url(../fonts/thunder.otf) format('opentype'); 
 font-style: normal; 
 }
 
 @font-face{
-font-family: 'cinetype-reg';
-src: url(../fonts/cinetype/GT-Cinetype-Regular.otf) format('opentype'); 
+font-family: 'lato-reg';
+src: url(../fonts/lato/lato-regular.ttf) format('opentype'); 
+font-style: normal; 
+}
+
+@font-face{
+font-family: 'lato-light';
+src: url(../fonts/lato/lato-light.ttf) format('opentype'); 
 font-style: normal; 
 }
 
@@ -22,11 +28,11 @@ html, body {
     margin: 0px;
     padding: 0px;
     background:#222223;
-    font-family: 'cinetype';
+    font-family: 'lato-reg';
 }
 
 ::selection {
-  background: #000000;
+  background: #48ffcc;
 }
 
 .nodesktop{
@@ -34,28 +40,35 @@ html, body {
 }
 
 .title{
-    font-family: 'cinetype';
+    font-family: 'thunder';
     color: #ffffff;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 180px;
+    line-height: 50px;
     transition: color 0.2s;
     display: inline-flex;
 	align-content: flex-end;
 }
 
 p{
-    font-family: 'cinetype-reg';
+    font-family: 'lato-light';
     color: #ffffff;
-    font-size: 44.5px;
-    line-height: 50px;
+    font-size: 19px;
+    line-height: 25px;
 }
 
-p.balance-text {
-text-wrap: balanced;
+h2{
+    color: #ffffff;
+    font-family: 'lato-reg'; 
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.push{
+    margin-top: 70px;
 }
 
 .details{
-    font-family: 'cinetype';
+    font-family: 'lato-reg';
     color: #ffffff;
     font-size: 20px;
     line-height: 25px;
@@ -65,7 +78,7 @@ text-wrap: balanced;
 }
 
 .leftpush{
-    margin-left: 40px;
+    margin-left: 20px;
     z-index: 1;
 }
 
@@ -73,52 +86,70 @@ text-wrap: balanced;
     margin-top: 25px;
 }
 
+.creditspush{
+    margin-top: 200px;
+}
+
+.arrowup{
+    margin-top: -15px;
+}
+
+.blankspace{
+    height: 80px;
+}
+
 .menu{
-/*    padding-left: 320px; */
+    padding-left: 80px; 
     display: inline-flex;
 	align-content: flex-end;
     z-index: 1;
 }
 
 .werk{
-    color: #bcbec0;
-    font-family: 'cinetype'; 
+    color: #ffffff;
+    font-family: 'lato-reg'; 
     font-size: 20px;
     line-height: 25px;
     transition: color 0.2s;
+}
+
+hr{
+   background-color: #48ffcc; 
 }
 
 .info{
     padding-left: 25px;
 }
 
-.current{
-    color: #7e9ffa;
-}
 
 li {
   display: inline;
 }
 
 a{
-    color: #bcbec0;
+    color: #ffffff;
     text-decoration: none;
 }
 
 a:hover {
-    color: #7efac0;
+    color: #48ffcc;
     text-decoration: none;
-/*    https://codepen.io/rauldronca/pen/ZyNQPX*/
-    animation: .8s shake infinite alternate;
 }
 
-@keyframes shake {
-  0% { transform: skewX(-15deg); }
-  5% { transform: skewX(15deg); }
-  10% { transform: skewX(-15deg); }
-  15% { transform: skewX(15deg); }
-  20% { transform: skewX(0deg); }
-  100% { transform: skewX(0deg); }  
+.underrule{
+    margin-top: 30px;
+}
+
+hr.lastrule{
+    height: 20px;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    border: none;
+}
+
+.titlepush{
+    margin-top: 120px;
 }
 
 .big{
@@ -148,11 +179,12 @@ hr.lines {
 }
 
 .icons{
-   height: 30px; 
+   height: 40px; 
+   margin-top: -30px;
 }
 
 .leftie{
-    margin-left: 85px;
+    margin-left: 65px;
 }
 
 .leftiee{
@@ -206,8 +238,7 @@ hr.lines {
 }
 
 a:hover.details{
-    color: #7efac0;
-    animation: 0s shake infinite alternate;
+    color: #48ffcc;
 }
 
 .homevid{
@@ -215,10 +246,13 @@ a:hover.details{
     z-index: 0;
 }
 
+.contacts{
+    margin-top: -45px;
+}
+
 .nomobile{
     display: block;
 }
-
 
 
 
@@ -240,11 +274,24 @@ a:hover.details{
 }
 
 p{
-    font-family: 'cinetype-reg';
+    font-family: 'lato-light';
     color: #ffffff;
-    font-size: 28px;
-    line-height: 33px;
+    font-size: 19px;
+    line-height: 25px;
 }
+    
+    .title{
+        font-size: 140px;
+    line-height: 50px;
+    }
+    
+.arrowup{
+    margin-top: 90px;
+}
+
+.contacts{
+        margin-top: 20px;
+    }
 
 .emptyspace{
     height: 40px;    
@@ -269,6 +316,9 @@ p{
 @media (min-width: 768px) { 
 
 /*
+    .contacts{
+        margin-top: 20px;
+    }
 .nodesktop{
     display: block;
 }
